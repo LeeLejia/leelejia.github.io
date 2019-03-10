@@ -1,1 +1,0 @@
-./protoc-3.5.1-1-windows-x86_64.exe --js_out=import_style=commonjs,binary:. finoMsg.proto
