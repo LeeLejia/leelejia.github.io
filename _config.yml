@@ -15,14 +15,12 @@ sidebar-about-description: "Goals determine what you going to be!"
 sidebar-avatar: https://avatars1.githubusercontent.com/u/24471738?s=460&v=4 # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # pages
-pages: [
+tabs: [
  {title: 'Home', url: '/'},
  {title: 'Tags', url: '/tags/'},
  {title: 'Keynote', url: '/keynote/'},
  {title: 'About', url: '/about/'},
 ]
-
-abc: testtest
 
 # SNS settings
 RSS: false
