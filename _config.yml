@@ -22,6 +22,8 @@ pages: [
  {title: 'About', url: '/about/'},
 ]
 
+abc: testtest
+
 # SNS settings
 RSS: false
 # weibo_username: qiubaiying
