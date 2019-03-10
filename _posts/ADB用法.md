@@ -1,14 +1,16 @@
 ---
-layout: post
-title: "ADB速查"
-date: 2017-02-10 10:36
-comments: true
-reward: true
-toc: true
-tags: 
-	- android
-	- tools
+layout:     post
+title:      adb命令行[转载]
+subtitle:   iOS定时器详解
+date:       2016-12-13 10:36
+author:     Youga
+header-img: img/post-bg-ios9-web.jpg
+catalog: 	 true
+tags:
+    - android
+    - tools
 ---
+
 ## 项目来源（[原 GitHub 仓库](https://github.com/mzlogin/awesome-adb)）
 
 ADB，即 [Android Debug Bridge](https://developer.android.com/studio/command-line/adb.html)，它是 Android 开发/测试人员不可替代的强大工具。
