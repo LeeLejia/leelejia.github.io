@@ -5,31 +5,31 @@ header-img: img/post-bg-desk.jpg
 email: cjwddz@gmail.com
 description: "Every failure is leading towards success."
 keyword: "youga, Youga's Blog, 李乐佳的博客, frontend, 前端, developer, 极客, 工程师"
-url: "http://LeeLejia.github.io"          # your host, for absolute URL
-baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+url: "http://LeeLejia.github.io" # your host, for absolute URL
+baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/LeeLejia/LeeLejia.github.io" # you code repository
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: https://avatars1.githubusercontent.com/u/24471738?s=460&v=4      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://avatars1.githubusercontent.com/u/24471738?s=460&v=4 # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # pages
 pages: [
-  {title: 'Home', url: '/'},
-  {title: 'Tags', url: '/tags/'},
-  {title: 'Keynote', url: '/keynote/'},
-  {title: 'About', url: '/about/'},
+ {title: 'Home', url: '/'},
+ {title: 'Tags', url: '/tags/'},
+ {title: 'Keynote', url: '/keynote/'},
+ {title: 'About', url: '/about/'},
 ]
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-zhihu_username:     白菜
-github_username:    LeeLejia
-# facebook_username:  
-#jianshu_username:   
-#twitter_username:   
+# weibo_username: qiubaiying
+zhihu_username: 白菜
+github_username: LeeLejia
+# facebook_username: 
+#jianshu_username: 
+#twitter_username: 
 
 
 
@@ -39,7 +39,7 @@ github_username:    LeeLejia
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 
 
@@ -57,7 +57,7 @@ gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+ input: GFM # use Github Flavored Markdown !important
 
 
 
@@ -67,13 +67,13 @@ kramdown:
 
 # Gitalk
 gitalk:
-  enable: false    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: LeeLejia.github.io    #仓库名称
-  owner: LeeLejia    #github用户名
-  admin: LeeLejia
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+ enable: false #是否开启Gitalk评论
+ clientID: f2c84e7629bb1446c1a4 #生成的clientID
+ clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d #生成的clientSecret
+ repo: LeeLejia.github.io #仓库名称
+ owner: LeeLejia #github用户名
+ admin: LeeLejia
+ distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
@@ -83,16 +83,16 @@ gitalk:
 ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-90855596-1' # Format: UA-xxxxxx-xx
+ga_domain: auto # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
 
 
 # Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+featured-tags: true # 是否使用首页标签
+featured-condition-size: 0 # 相同标签数量大于这个数，才会出现在首页
 
 
 
@@ -104,16 +104,16 @@ service-worker: true
 
 # Friends
 friends: [
-  {
-    title: "Gzhu",
-    href: "http://www.gzhu.edu.cn/"
-  },{
-    title: "Google",
-    href: "https://www.google.com"
-  },{
-    title: "About Youga's Github",
-    href: "https://profile-summary-for-github.com/user/leelejia"
-  }
+ {
+ title: "Gzhu",
+ href: "http://www.gzhu.edu.cn/"
+ },{
+ title: "Google",
+ href: "https://www.google.com"
+ },{
+ title: "About Youga's Github",
+ href: "https://profile-summary-for-github.com/user/leelejia"
+ }
 ]
 
 theme: jekyll-theme-minimal
