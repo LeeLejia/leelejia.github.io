@@ -98,13 +98,16 @@ service-worker: true
 
 # Friends
 friends: [
-    {
-        title: "Gzhu",
-        href: "http://www.gzhu.edu.cn/"
-    },{
-        title: "Google",
-        href: "https://www.google.com"
-    }
+  {
+    title: "Gzhu",
+    href: "http://www.gzhu.edu.cn/"
+  },{
+    title: "Google",
+    href: "https://www.google.com"
+  },{
+    title: "About Youga's Github",
+    href: "https://profile-summary-for-github.com/user/leelejia"
+  }
 ]
 
 theme: jekyll-theme-minimal
