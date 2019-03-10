@@ -1,10 +1,13 @@
 ---
-layout: post
-title: "异步处理如何选择？Callback or Promise？"
-date: 2018-05-12 10:15
-comments: true
-tags: 
-	- frontend 
+layout:     post
+title:      Callback or Promise？
+subtitle:   异步处理该如何选择？
+date:       2018-05-12 10:15
+author:     Youga
+header-img: img/post-bg-ios9-web.jpg
+catalog: 	 true
+tags:
+  - web
 ---
 
 前端开发中有一些Api需要通过回调处理一些异步操作，但是对于我，更愿意是使用类似*Promise*的调用方式。那么什么时候我们使用回调函数什么时候使用*Promise*呢？
