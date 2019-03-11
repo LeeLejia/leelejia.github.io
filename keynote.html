@@ -13,9 +13,9 @@ header-img: "img/tag-bg.jpg"
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>前端技术分享</title>
 
-  <link rel="stylesheet" type='text/css' media='all' href="{{ "static/css/keynote/webslides.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type='text/css' media='all' href="{{ "css/keynote/webslides.css" }}">
   <!-- Optional - CSS SVG Icons (Font Awesome) -->
-  <link rel="stylesheet" type='text/css' media='all' href="{{ "static/css/keynote/svg-icons.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type='text/css' media='all' href="{{ "css/keynote/svg-icons.css" }}">
   <link rel="canonical" href="http://your-url.com/">
   <!-- SOCIAL CARDS (ADD YOUR INFO) -->
   <!-- Android -->
@@ -67,7 +67,7 @@ header-img: "img/tag-bg.jpg"
       </section>
     </article>
   </main>
-  <script src="{{ "static/js/keynote/webslides.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "js/keynote/webslides.js" }}"></script>
   <script>
     window.ws = new WebSlides({
       autoslide: false,
@@ -77,9 +77,9 @@ header-img: "img/tag-bg.jpg"
       navigateOnScroll: true,
       scrollWait: 450,
       slideOffset: 50,
-      showIndex: true
+      showIndex: false
     })
   </script>
-  <script src="{{ "static/js/keynote/svg-icons.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "js/keynote/svg-icons.js" }}"></script>
 </body>
 </html>
