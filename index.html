@@ -3,11 +3,6 @@ layout: page
 description: "Thinking will not overcome fear but action will."
 ---
 
-<!-- start webslide -->
-<script async src="{{ "js/keynote/webslides.js" }}"></script>
-<script async src="{{ "js/keynote/svg-icons.js" }}"></script>
-<!-- end webslide -->
-
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -45,3 +40,11 @@ description: "Thinking will not overcome fear but action will."
     {% endif %}
 </ul>
 {% endif %}
+
+
+<!-- start webslide -->
+<link rel="preload" href="{{ "css/keynote/webslides.css" }}" as="style">
+<link rel="preload" href="{{ "css/keynote/svg-icons.css" }}" as="style">
+<script async src="{{ "js/keynote/webslides.js" }}"></script>
+<script async src="{{ "js/keynote/svg-icons.js" }}"></script>
+<!-- end webslide -->
