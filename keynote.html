@@ -3,7 +3,83 @@ title: Keynote
 layout: default
 description: keep hungry keep foolish
 header-img: "img/tag-bg.jpg"
-iframe: "http://huangxuan.me/js-module-7day/"
 ---
 
-<iframe src="http://huangxuan.me/js-module-7day/"></iframe>
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <!-- <base href="/users/lilejia/Desktop/github/WebSlides/" /> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>前端技术分享</title>
+
+  <link rel="stylesheet" type='text/css' media='all' href="{{ "static/css/keynote/webslides.css" | prepend: site.baseurl }}">
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="{{ "static/css/keynote/svg-icons.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="http://your-url.com/">
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+</head>
+<body>
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <section>
+        <div class="wrap">
+          <h2>Keynote</h2>
+          <ul class="flexblock gallery">
+            <li>
+              <a href="#">
+                <figure>
+                  <img alt="Thumbnail " src="https://source.unsplash.com/IFxjDdqK_0U/800x600">
+                  <div class="overlay">
+                    <h2>前端简介</h2>
+                    <p>前端的演变和发展，使用的技术栈</p>
+                  </div>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img alt="Thumbnail" src="https://source.unsplash.com/zhkTCCmD4xI/800x600">
+                  <div class="overlay">
+                    <h2>为何使用typescript</h2>
+                    <p>强类型语言给我们带来什么？</p>
+                  </div>
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure>
+                  <img alt="Thumbnail" src="https://source.unsplash.com/uPGOEbjbVGA/800x600">
+                  <div class="overlay">
+                    <h2>前端开发者如何成长</h2>
+                    <p>在技术纷杂，变化迭起的时代，什么是核心竞争力</p>
+                  </div>
+                </figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="{{ "static/js/keynote/webslides.js" | prepend: site.baseurl }}"></script>
+  <script>
+    window.ws = new WebSlides({
+      autoslide: false,
+      changeOnClick: false,
+      loop: false,
+      minWheelDelta: 40,
+      navigateOnScroll: true,
+      scrollWait: 450,
+      slideOffset: 50,
+      showIndex: true
+    })
+  </script>
+  <script src="{{ "static/js/keynote/svg-icons.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>

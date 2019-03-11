@@ -136,8 +136,6 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 	facebook_username:  username
 	github_username:    username
 	# weibo_username:   username
-	
-	
 
 ![](http://ww4.sinaimg.cn/large/006tKfTcgy1fgrgbgf77aj308i02v748.jpg)
 

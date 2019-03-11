@@ -16,9 +16,8 @@ sidebar-avatar: https://avatars1.githubusercontent.com/u/24471738?s=460&v=4 # us
 
 # pages
 tabs: [
- {title: 'Home', url: '/'},
- {title: 'Tags', url: '/tags/'},
  {title: 'Keynote', url: '/keynote/'},
+ {title: 'Tags', url: '/tags/'},
  {title: 'About', url: '/about/'},
 ]
 
