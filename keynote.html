@@ -5,83 +5,59 @@ description: keep hungry keep foolish
 header-img: "img/tag-bg.jpg"
 ---
 
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-<head>
-  <!-- <base href="/users/lilejia/Desktop/github/WebSlides/" /> -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>前端技术分享</title>
-  <base href="/">
-
-  <link rel="stylesheet" type='text/css' media='all' href="{{ "css/keynote/webslides.css" }}">
-  <!-- Optional - CSS SVG Icons (Font Awesome) -->
-  <link rel="stylesheet" type='text/css' media='all' href="{{ "css/keynote/svg-icons.css" }}">
-  <!-- <link rel="canonical" href="http://your-url.com/"> -->
-  <base>
-  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-  <!-- Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#333333">
-</head>
-<body>
-  <main role="main">
-    <article id="webslides" class="vertical">
-      <section>
-        <div class="wrap">
-          <h2>Keynote</h2>
-          <ul class="flexblock gallery">
-            <li>
-              <a href="#">
-                <figure>
-                  <img alt="Thumbnail " src="https://source.unsplash.com/IFxjDdqK_0U/800x600">
-                  <div class="overlay">
-                    <h2>前端简介</h2>
-                    <p>前端的演变和发展，使用的技术栈</p>
-                  </div>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure>
-                  <img alt="Thumbnail" src="https://source.unsplash.com/zhkTCCmD4xI/800x600">
-                  <div class="overlay">
-                    <h2>为何使用typescript</h2>
-                    <p>强类型语言给我们带来什么？</p>
-                  </div>
-                </figure>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <figure>
-                  <img alt="Thumbnail" src="https://source.unsplash.com/uPGOEbjbVGA/800x600">
-                  <div class="overlay">
-                    <h2>前端开发者如何成长</h2>
-                    <p>在技术纷杂，变化迭起的时代，什么是核心竞争力</p>
-                  </div>
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </article>
-  </main>
-  <script src="{{ "js/keynote/webslides.js" }}"></script>
-  <script>
-    window.ws = new WebSlides({
-      autoslide: false,
-      changeOnClick: false,
-      loop: false,
-      minWheelDelta: 40,
-      navigateOnScroll: true,
-      scrollWait: 450,
-      slideOffset: 50,
-      showIndex: false
-    })
-  </script>
-  <script src="{{ "js/keynote/svg-icons.js" }}"></script>
-</body>
-</html>
+<main role="main">
+  <article id="webslides" class="vertical">
+    <section>
+      <div class="wrap">
+        <h2>Keynote</h2>
+        <ul class="flexblock gallery">
+          <li>
+            <a href="#">
+              <figure>
+                <img alt="Thumbnail " src="https://source.unsplash.com/IFxjDdqK_0U/800x600">
+                <div class="overlay">
+                  <h2>前端简介</h2>
+                  <p>前端的演变和发展，使用的技术栈</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img alt="Thumbnail" src="https://source.unsplash.com/zhkTCCmD4xI/800x600">
+                <div class="overlay">
+                  <h2>为何使用typescript</h2>
+                  <p>强类型语言给我们带来什么？</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img alt="Thumbnail" src="https://source.unsplash.com/uPGOEbjbVGA/800x600">
+                <div class="overlay">
+                  <h2>前端开发者如何成长</h2>
+                  <p>在技术纷杂，变化迭起的时代，什么是核心竞争力</p>
+                </div>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</main>
+<script>
+  window.ws = new WebSlides({
+    autoslide: false,
+    changeOnClick: false,
+    loop: false,
+    minWheelDelta: 40,
+    navigateOnScroll: true,
+    scrollWait: 450,
+    slideOffset: 50,
+    showIndex: false
+  })
+</script>
