@@ -2,7 +2,7 @@
 title: Keynote
 layout: default
 ---
-<base href="/">
+<!-- <base href="/"> -->
 <link rel="stylesheet" type='text/css' media='all' href="https://static.cjwddz.cn/keynote/css/webslides.css">
 <link rel="stylesheet" type='text/css' media='all' href="https://static.cjwddz.cn/keynote/css/svg-icons.css">
 <main role="main">
@@ -11,39 +11,19 @@ layout: default
       <div class="wrap">
         <h2>Keynote</h2>
         <ul class="flexblock gallery">
+          {% for keynote in paginator.keynotes %}
           <li>
-            <a href="#">
+            <a href="{{ keynote.href }}">
               <figure>
-                <img alt="Thumbnail " src="https://source.unsplash.com/IFxjDdqK_0U/800x600">
+                <img alt="Thumbnail " src="{{ keynote.img }}">
                 <div class="overlay">
-                  <h2>前端简介</h2>
-                  <p>前端的演变和发展，使用的技术栈</p>
+                  <h2>{{ keynote.title }}</h2>
+                  <p>{{ keynote.desc }}</p>
                 </div>
               </figure>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <figure>
-                <img alt="Thumbnail" src="https://source.unsplash.com/zhkTCCmD4xI/800x600">
-                <div class="overlay">
-                  <h2>为何使用typescript</h2>
-                  <p>强类型语言给我们带来什么？</p>
-                </div>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <figure>
-                <img alt="Thumbnail" src="https://source.unsplash.com/uPGOEbjbVGA/800x600">
-                <div class="overlay">
-                  <h2>前端开发者如何成长</h2>
-                  <p>在技术纷杂，变化迭起的时代，什么是核心竞争力</p>
-                </div>
-              </figure>
-            </a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </section>
