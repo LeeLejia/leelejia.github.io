@@ -4,7 +4,7 @@ title:      Callback or Promise？
 subtitle:   异步处理该如何选择？
 date:       2018-05-12 10:15
 author:     Youga
-header-img: http://static.cjwddz.cn/blog/img/post-bg-ios9-web.jpg
+header-img: img/post-bg-ios9-web.jpg
 catalog: 	 true
 tags:
   - web
