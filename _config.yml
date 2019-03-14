@@ -22,22 +22,23 @@ tabs: [
 ]
 
 # keynotes
+# https://source.unsplash.com/800x600/?cat,dog
 keynotes: [
   {
     title: '前端简介', 
     desc: '前端的演变和发展，使用的技术栈', 
     href: 'http://www.baidu.com',
-    img: 'https://source.unsplash.com/800x600/?cat,dog'
+    img: 'https://source.unsplash.com/800x600/?computer'
   }, {
     title: '为何使用typescript', 
     desc: '强类型语言给我们带来什么？', 
     href: 'http://www.baidu.com',
-    img: 'https://source.unsplash.com/800x600/?cat,dog'
+    img: 'https://source.unsplash.com/800x600/?cat'
   }, {
     title: '前端开发者如何成长', 
     desc: '在技术纷杂，变化迭起的时代，什么是核心竞争力', 
     href: 'http://www.baidu.com',
-    img: 'https://source.unsplash.com/800x600/?cat,dog'
+    img: 'https://source.unsplash.com/800x600/?dog'
   }
 ]
 
