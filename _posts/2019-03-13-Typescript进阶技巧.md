@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Typescript进阶技巧
-subtitle:   生命诚可贵，请用typescript！
+subtitle:   生命诚可贵，快用typescript！
 date:       2019-03-13 10:15
 author:     Youga
 header-img: https://static.cjwddz.cn/blog/img/post-bg-ios9-web.jpg
@@ -10,7 +10,7 @@ tags:
     - web
 ---
 
-差不多想戒`javascript`了。哎，生命诚可贵，请用typescript！
+差不多想戒`javascript`了。哎，生命诚可贵，快用typescript！
 
 tips: 第三方包如果存在声明描述错误的情况，可以另写声明覆盖。消灭小红点！
 例如 Taro getStorage Promise 值类型错误，可以重写声明覆盖：
