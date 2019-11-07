@@ -2,9 +2,8 @@
 title: Keynote
 layout: default
 ---
+
 <!-- <base href="/"> -->
-<link rel="stylesheet" type='text/css' media='all' href="https://static.cjwddz.cn/keynote/css/webslides.css">
-<link rel="stylesheet" type='text/css' media='all' href="https://static.cjwddz.cn/keynote/css/svg-icons.css">
 <main role="main">
   <article id="webslides" class="vertical">
     <section>
@@ -15,7 +14,7 @@ layout: default
           <li>
             <a href="{{ keynote.href }}">
               <figure>
-                <img alt="Thumbnail " src="{{ keynote.img }}">
+                <img alt="Thumbnail " src="{{ keynote.img }}" />
                 <div class="overlay">
                   <h2>{{ keynote.title }}</h2>
                   <p>{{ keynote.desc }}</p>
@@ -39,5 +38,5 @@ layout: default
     scrollWait: 450,
     slideOffset: 50,
     showIndex: false
-  })
+  });
 </script>
