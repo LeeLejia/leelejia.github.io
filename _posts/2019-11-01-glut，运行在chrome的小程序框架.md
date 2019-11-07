@@ -4,7 +4,7 @@ title: glut，运行在chrome的小程序框架
 subtitle: 使用用命令行和android对话
 date: 2019-11-01 10:36
 author: Youga
-header-img: https://static.cjwddz.cn/blog/img/post-bg-ios9-web.jpg
+header-img: https://source.unsplash.com/900x400/?google,chrome&a=1232
 catalog: true
 tags:
   - javascript
