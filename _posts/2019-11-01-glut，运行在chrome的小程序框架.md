@@ -1,7 +1,7 @@
 ---
 layout: post
 title: glut，运行在chrome的小程序框架
-subtitle: 使用用命令行和android对话
+subtitle: Glut 字面意思是供大于求的,反过来则是需要的都可以被满足,期望做一个价值取决于想象的项目。
 date: 2019-11-01 10:36
 author: Youga
 header-img: https://source.unsplash.com/900x400/?google,chrome&a=1232
