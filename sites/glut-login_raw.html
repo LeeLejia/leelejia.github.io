@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>获取你的GroupId</title>
+    <style type="text/css">
+      body {
+        font-size: 16px;
+      }
+      .action-row {
+        margin: 18px 50px;
+      }
+      .action-row .confirm {
+        margin-left: 20px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 2px 4px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .action-row .confirm:active {
+        background: #c9c9c9;
+      }
+      .action-row .regiest {
+        font-size: 13px;
+      }
+      #result {
+        margin: 20px 0;
+        color: green;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start your code here -->
+    <div class="get-groupId">
+      <p>请输入你的邮箱和密码以提取你的GroupId</p>
+      <div class="ip-row ">
+        <label>邮箱</label>
+        <input type="email" id="ip-email" />
+      </div>
+      <div class="ip-row ">
+        <label>密码</label>
+        <input type="password" id="ip-pwd" />
+      </div>
+    </div>
+    <div class="action-row ">
+      <a class="regiest" href="//www.baidu.com">注册一个</a>
+      <span class="confirm" onclick="confirm()">确定</span>
+    </div>
+    <!-- End your code here -->
+  </body>
+  <!-- 存储服务 -->
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.15.0/dist/av-min.js"></script>
+  <script>
+    var { Query, User } = AV;
+    AV.init({
+      appId: "xxxx",
+      appKey: "XXXX"
+    });
+    function confirm() {
+      const email = document.querySelector("#ip-email");
+      if (!/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email.value)) {
+        alert("email address is not valid.");
+        return;
+      }
+      const pwd = document.querySelector("#ip-pwd");
+      if (!/^[a-z0-9]{6,20}$/i.test(pwd.value)) {
+        alert(
+          "Please enter a 6-20 digit password in English and numeric combination"
+        );
+      }
+      AV.User.logIn(email.value, pwd.value).then(
+        function(user) {
+          document.querySelector("#result").innerHTML = `GroupId:${user.get(
+            "groupId"
+          )}<div>You can share the groupId, but make sure you don't reveal the password.</div>`;
+          alert("success");
+        },
+        function(error) {
+          alert(error.rawMessage || "No user exists, please register first");
+        }
+      );
+    }
+  </script>
+</html>
