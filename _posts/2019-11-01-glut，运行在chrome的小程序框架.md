@@ -128,8 +128,9 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 将全局样式和小程序样式隔离比较难。目前是通过 glut 公共选择器复写一遍默认样式,这样可以隔绝大部分的样式覆盖,并无法完全避免问题。
 
-### 相关
+### 相关链接
 
-- [Glut 仓库](https://github.com/LeeLejia/glut/)
+- [商店下载](https://chrome.google.com/webstore/detail/glut/baggadcfggenanhadoapjamongmhjpla)
+- [Github 仓库](https://github.com/LeeLejia/glut/)
 - [SDK 用法](https://www.npmjs.com/package/glut-app-sdk)
 - [Glut 应用模板](https://github.com/LeeLejia/glut-vue-demo)
