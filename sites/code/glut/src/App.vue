@@ -202,7 +202,10 @@ export default {
       pwd: "",
       pwdConfirm: "",
       groupId: "",
-      type: "getId", // getId regiest
+      type:
+        window.location.search.indexOf("page=regiest") !== -1
+          ? "regiest"
+          : "getId", // getId regiest
       name: "",
       desc: ""
     };
