@@ -256,7 +256,9 @@ export default {
       user.set("pwd", this.pwd);
       user.signUp().then(
         user => {
-          alert("注册成功,请在邮箱激活账户");
+          alert("注册成功,请在邮箱激活账户,之后重新获取GroupId");
+          this.groupId = "";
+          this.type = "getId";
         },
         error => {
           alert(error.rawMessage || "注册失败");
