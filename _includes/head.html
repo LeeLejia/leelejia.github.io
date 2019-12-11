@@ -1,21 +1,23 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
+  <!-- <meta
     name="google-site-verification"
     content="TGMtktqBSt376ikxyXlMkt6SEpVfHmj0mB_WlVoM7Hw"
-  />
+  /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ site.description }}" />
   <meta name="keywords" content="{{ site.keyword }}" />
   <meta name="theme-color" content="{{ site.chrome - tab - theme - color }}" />
-
   <title>
     {% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{
-      site.SEOTitle
-    }}{% endif %}
+    site.SEOTitle }}{% endif %}
   </title>
-
+  <script
+    data-ad-client="ca-pub-8464814345106485"
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+  ></script>
   <!-- Canonical URL -->
   <link
     rel="canonical"
@@ -23,19 +25,15 @@
   />
 
   <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="{{
-    "/css/bootstrap.min.css" | prepend: site.baseurl
-  }}">
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend:
+  site.baseurl }}">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{
-    "/css/hux-blog.min.css" | prepend: site.baseurl
-  }}">
+  <link rel="stylesheet" href="{{ "/css/hux-blog.min.css" | prepend:
+  site.baseurl }}">
 
   <!-- Pygments Github CSS -->
-  <link rel="stylesheet" href="{{
-    "/css/syntax.css" | prepend: site.baseurl
-  }}">
+  <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
 
   <!-- Custom Fonts -->
   <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->

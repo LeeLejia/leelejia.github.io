@@ -1,0 +1,168 @@
+/* stylelint-disable */
+
+/* 超出省略号 */
+@mixin fontEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* flex布局 */
+@mixin flexBox($row: true) {
+  display: flex;
+
+  @if ($row) {
+    flex-direction: row;
+  } @else {
+    flex-direction: column;
+  }
+
+  align-items: center;
+}
+
+/* 前置图标 */
+@mixin beforeIcon($width, $height, $url, $top: 0, $margin: false) {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: $width;
+    height: $height;
+    position: relative;
+    top: $top;
+    flex-shrink: 0;
+
+    @if ($margin) {
+      margin: $margin;
+    }
+
+    background: url($url) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* 后置图标 */
+@mixin afterIcon($width, $height, $url, $top: 0, $margin: false) {
+  &::after {
+    content: "";
+    display: inline-block;
+    width: $width;
+    height: $height;
+    position: relative;
+    top: $top;
+
+    @if ($margin) {
+      margin: $margin;
+    }
+
+    background: url($url) no-repeat;
+    background-size: cover;
+  }
+}
+
+// 设置蒙版
+@mixin mask($opacity: 0.6) {
+  &::after {
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: $opacity;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* 设置背景 */
+@mixin setBg($url) {
+  background: url($url) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 移除滚动条 */
+@mixin removeScrollBar {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
+
+/* 多行文本省略 */
+@mixin text-ellipsis-num($width) {
+  max-width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 表格 保持二维布局即可 */
+@mixin table($borderRadius: 10px, $border: 1px solid #e48328) {
+  margin: auto;
+  border-radius: $borderRadius;
+  overflow: hidden;
+  border: $border;
+  text-align: center;
+
+  & > * {
+    display: flex;
+    flex-direction: row;
+
+    &:not(:last-child) {
+      border-bottom: $border;
+    }
+
+    & > * {
+      flex: 1;
+      text-align: center;
+      display: inline;
+
+      &:not(:last-child) {
+        border-right: $border;
+      }
+    }
+  }
+}
+
+/* 扩展可点击区域 */
+@mixin extend-click($size: 10px) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -$size;
+    left: -$size;
+    right: -$size;
+    bottom: -$size;
+  }
+}
+
+/* 多行文本溢出 */
+@mixin multiEllipsis($line: 2) {
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin bg($width, $height, $url) {
+  width: $width;
+  height: $height;
+  background: url($url) no-repeat;
+  background-size: cover;
+}
+
+// 阿语地区样式
+@mixin in-rtl {
+  $selector: &;
+  @at-root {
+    .rtl {
+      #{$selector} {
+        @content;
+      }
+    }
+  }
+}

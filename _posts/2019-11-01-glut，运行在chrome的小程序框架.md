@@ -13,13 +13,11 @@ tags:
 
 ## 介绍
 
-Glut 是一款[Chrome 插件](https://chrome.google.com/webstore/detail/glut/baggadcfggenanhadoapjamongmhjpla), 字面意思是供大于求的，反过来则是需要的都可以被满足。
+Glut 是一款[Chrome 插件](https://chrome.google.com/webstore/detail/glut/baggadcfggenanhadoapjamongmhjpla), 字面意思是供大于求的，反过来则是满足被需要的。
 
-项目的初衷是让前端开发者可以通过熟悉的技术栈，快速的开发一些小工具，并在团队中分享使用。是`"写个脚本处理下"`的进阶方案。因为它可以做一些浏览器脚本做不到的事，是比`Tampermonkey`更强大的工具。
+这里 Glut 相当于一个[**小程序容器**](https://github.com/LeeLejia/glut/), 而前端开发者可以通过 Glut 开发、调试并发布或者更新自己的小程序，并同步给团队的其它成员。而不需要单独开发一个 chrome 拓展，等待漫长的审核。
 
-这里 Glut 相当于一个[**小程序容器**](https://github.com/LeeLejia/glut/), 前端开发可以在自己的前端项目中导入 sdk，在 glut 中调试、发布，同步给团队的其它成员。而不需要单独开发一个 chrome 拓展，等待漫长的审核。
-
-glut 小程序和页面脚本关系：
+Glut 小程序和页面脚本关系：
 
 ![](/img/2019-11-01/glut-1.png)
 
@@ -121,7 +119,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 每次打开浏览器或者手动选择更新时, glut 向服务器请求最新的小程序清单。清单列表包括了每个小程序的 appId 和更新时间。程序 diff 新的旧的列表,将待更新和已删除的小程序从本地删除。在用户第一次打开小程序的时候，小程序被下载并记录到清单。
 
-### glut 应用的样式隔离和环境隔离
+### glut 应用的样式隔离
 
 每个 glut 应用都包含了一系列公共选择器和私有选择器,使用 appId 标志。
 在开发 Glut 应用时应使用`scoped style`,避免应用样式污染全局样式。由于一些框架是根据源码的文件名和路径名`hash`生成组件 id。多个小程序同时打开的时候可能因为 id 相同,本应该是隔离的样式互相影响了。可以通过使用小程序的 appId 作为 css 根选择器。appId 在 glut-app-sdk 中获取,然而小程序是在发布的时候后天才会分配一个 appId,调试阶段的 appId 只是一个占位字符串。
