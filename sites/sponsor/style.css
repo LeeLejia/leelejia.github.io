@@ -129,11 +129,11 @@ a {
 }
 
 #donateBox #PayPal {
-  background-image: url(images/paypal.svg);
+  background-image: url(/sites/sponsor/images/paypal.svg);
 }
 
 #donateBox > #QQPay {
-  background-image: url(images/QQqianbao.png);
+  background-image: url(/sites/sponsor/images/QQqianbao.png);
   line-height: 28px;
 }
 
@@ -142,11 +142,11 @@ a {
 }
 
 #donateBox #AliPay {
-  background-image: url(images/alipay.svg);
+  background-image: url(/sites/sponsor/images/alipay.svg);
 }
 
 #donateBox #WeChat {
-  background-image: url(images/wechat.svg);
+  background-image: url(/sites/sponsor/images/wechat.svg);
 }
 
 #QRBox {
@@ -182,7 +182,7 @@ a {
   height: 24px;
   left: calc(50% + 135px);
   top: calc(50% - 30px);
-  background: no-repeat center center url(images/github.svg);
+  background: no-repeat center center url(/sites/sponsor/images/github.svg);
   background-size: contain;
   opacity: 0.3;
   transform: rotatez(15deg);
