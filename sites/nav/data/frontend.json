@@ -6,12 +6,6 @@
     "category_item": "baseLearnItem",
     "item_children": [
       {
-        "child_name": "Hulkye's 前端笔记本",
-        "img_src": "./img/Hulkye.png",
-        "a_href": "https://hulkye.github.io/Docs/",
-        "child_desc": "个人的前端学习笔记本,记录些许"
-      },
-      {
         "child_name": "Mozilla 开发者网络",
         "img_src": "./img/mozilla.jpg",
         "a_href": "https://developer.mozilla.org/zh-CN/",
@@ -1931,7 +1925,6 @@
     "category_icon": "icon-iconset0284",
     "category_item": "chromeItem",
     "item_children": [
-      
       {
         "child_name": "Chrome插件英雄榜",
         "img_src": "./img/ChromeAppHeroes.png",

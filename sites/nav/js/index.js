@@ -37,8 +37,17 @@ $(function () {
   }
 
   // ============================数据请求业务==============================
+  function getQueryString(name) {
+    let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    let r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+      return unescape(r[2]);
+    };
+    return null;
+  }
+
   $.getJSON(
-    'https://raw.githubusercontent.com/Hulkye/FrontEndNav/master/data/db.json',
+    `data/${getQueryString('type') || 'frontend'}.json`,
     res => {
       // 页面渲染
       var categoryHTML = template('CategoryId', {
@@ -88,8 +97,8 @@ $(function () {
     $('html,body')
       .stop()
       .animate({
-          scrollTop: floorTop
-        },
+        scrollTop: floorTop
+      },
         800,
         'linear',
         function () {
@@ -162,8 +171,8 @@ $(function () {
     $goTopBtn.on('click', function (event) {
       event.preventDefault()
       $('body,html').animate({
-          scrollTop: 0
-        },
+        scrollTop: 0
+      },
         scroll_top_duration
       )
     })
