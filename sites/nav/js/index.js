@@ -1,40 +1,11 @@
 window.isClick = false
 
 $(function () {
-  showTime()
   NProgress.start()
   NProgress.configure({
     easing: 'ease',
     speed: 500
   })
-
-  // 显示当前时间
-  function showTime() {
-    //获取元素id
-    var year = document.getElementById("currentYear");
-    var mouth = document.getElementById("currentMonth");
-    var date = document.getElementById("currentDate");
-    var hours = document.getElementById("currentHours");
-    var minutes = document.getElementById("currentMinutes");
-    var seconds = document.getElementById("currentSeconds");
-    //设置定时器1s执行一次
-    setInterval(function () {
-      var time = new Date(); // 程序计时的月从0开始取值后+1
-      var Y = time.getFullYear()
-      var M = time.getMonth() + 1 >= 10 ? time.getMonth() + 1 : '0' + (time.getMonth() + 1)
-      var D = time.getDate() >= 10 ? time.getDate() : '0' + time.getDate()
-      var h = time.getHours() >= 10 ? time.getHours() : '0' + time.getHours()
-      var m = time.getMinutes() >= 10 ? time.getMinutes() : '0' + time.getMinutes()
-      var s = time.getSeconds() >= 10 ? time.getSeconds() : '0' + time.getSeconds()
-      // var t = Y + "-" + M + "-" + D + " " + h + ":" + m + ":" + s;
-      year.innerHTML = Y;
-      mouth.innerHTML = M;
-      date.innerHTML = D;
-      hours.innerHTML = h;
-      minutes.innerHTML = m;
-      seconds.innerHTML = s;
-    }, 1000);
-  }
 
   // ============================数据请求业务==============================
   function getQueryString(name) {
@@ -177,23 +148,4 @@ $(function () {
       )
     })
   }
-
-  // 关于本站点击
-  $('#aboutThis').on('click', function () {
-    toastr.options = {
-      "closeButton": true,
-      "debug": false,
-      "positionClass": "toast-bottom-right",
-      "onclick": null,
-      "showDuration": "300",
-      "hideDuration": "1000",
-      "timeOut": "5000",
-      "extendedTimeOut": "1000",
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    }
-    toastr.info('该页面仍在建设中。。。')
-  })
 })
