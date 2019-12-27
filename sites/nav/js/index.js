@@ -20,12 +20,14 @@ $(function () {
   $.getJSON(
     `data/${getQueryString('type') || 'frontend'}.json`,
     res => {
+      document.title = res.title
+      $('#nav-title').html(res['nav-title'])
       // 页面渲染
       var categoryHTML = template('CategoryId', {
-        list: res
+        list: res.navlist
       })
       var navItemHTML = template('navItemId', {
-        list: res
+        list: res.navlist
       })
       $('#category > ul').html(categoryHTML)
       $('#mainContent').html(navItemHTML)
