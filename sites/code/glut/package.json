@@ -2,7 +2,7 @@
   "name": "glut",
   "version": "1.0.0",
   "description": "glut sit",
-  "author": "lilejia <lilejia@bigo.sg>",
+  "author": "lilejia <cjwddz@gmail.sg>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
